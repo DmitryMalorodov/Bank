@@ -21,4 +21,12 @@ public class MainPage extends Header {
     public void pressBankManagerLoginButton() {
         driver.findElement(bankManagerLoginButton).click();
     }
+
+    public static void waiting(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
